@@ -12,6 +12,8 @@ function ContactForm() {
         method="POST"
         netlify
       >
+        <input type="hidden" name="form-name" value="contact" />
+
         <label className="flex flex-col">
           Name
           <input type="text" className="border-2 p-2" required />
