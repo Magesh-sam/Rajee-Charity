@@ -82,10 +82,18 @@ function Navbar() {
         <img
           src="/rajee-logo.png"
           alt="Rajee Charity"
-          className="w-14 h-auto"
+          width={56}
+          height={56}
+          className="object-contain object-center "
         />
-        <span className="text-sm text-blue-900 font-bold">
-          <span>Rajee Subramani</span> Public Charitable Trust
+        <span className="text-sm text-blue-900 font-bold flex flex-col">
+          <span
+            className="text-sky-500 font-bold
+"
+          >
+            Rajee Subramani
+          </span>
+          <span>Public Charitable Trust</span>
         </span>
       </a>
       <ul className="navlist flex items-center gap-3 pl-5  text-lg font-normal text-nowrap">

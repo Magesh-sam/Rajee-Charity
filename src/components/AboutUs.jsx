@@ -9,6 +9,9 @@ function AboutUs() {
       <h2 className="text-3xl text-center text-violet-600 font-semibold pt-3">
         Creating Opportunities, Transforming Lives
       </h2>
+      <h2 className="text-3xl text-center text-blue-900 font-semibold pt-3 italic font-sans ">
+        #transformalife
+      </h2>
       <h3 className="font-bold text-2xl  pt-14">
         Welcome to the Rajee Subramani Public Charitable Trust website!
       </h3>
