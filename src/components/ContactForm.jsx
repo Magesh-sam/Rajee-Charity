@@ -8,15 +8,9 @@ function ContactForm() {
       </h2>
       <form
         className="flex flex-col gap-5 max-w-80 "
-        action="/success"
-        name="contact"
-        netflify
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        action="https://formspree.io/f/xkgwqoaa"
+        method="POST"
       >
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="bot-field" />
-
         <label className="flex flex-col">
           Name
           <input type="text" className="border-2 p-2" name="name" required />
