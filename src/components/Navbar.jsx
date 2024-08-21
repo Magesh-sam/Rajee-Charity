@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { useState } from "react";
 
@@ -10,6 +10,7 @@ function Navbar() {
   useEffect(() => {
     setIsNavbarOpen(false);
   }, [isMediumScreen]);
+
   const Sidebar = () => {
     return (
       <aside className="absolute top-0 right-0 h-screen w-1/2 bg-blue-200 pl-5  ">
@@ -77,15 +78,15 @@ function Navbar() {
 
   return (
     <nav className="navbar flex justify-between items-center gap-5 px-5 py-3 bg-blue-100 text-black sticky top-0 left-0 w-full ">
-      <a to="/" className="logo flex items-center gap-5">
+      <a href="/" className="logo flex flex-col items-center gap-1">
         <img
           src="/rajee-logo.png"
           alt="Rajee Charity"
           className="w-14 h-auto"
         />
-        {/* <span className="text-xl text-blue-900 font-bold">
-          Rajee Subramani Public Charitable Trust
-        </span> */}
+        <span className="text-sm text-blue-900 font-bold">
+          <span>Rajee Subramani</span> Public Charitable Trust
+        </span>
       </a>
       <ul className="navlist flex items-center gap-3 pl-5  text-lg font-normal">
         {isMediumScreen ? (

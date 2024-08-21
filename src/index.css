@@ -4,4 +4,10 @@
 
 * {
   scroll-behavior: smooth;
+  scroll-margin-top: 50px;
+}
+html,
+body {
+  background: #f1f1f1;
+  color: #121212;
 }
