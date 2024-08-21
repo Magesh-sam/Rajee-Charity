@@ -9,22 +9,24 @@ function ContactForm() {
       <form
         className="flex flex-col gap-5 max-w-80 "
         name="contact"
-        method="POST"
-        netlify
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
 
         <label className="flex flex-col">
           Name
-          <input type="text" className="border-2 p-2" required />
+          <input type="text" className="border-2 p-2" name="name" required />
         </label>
         <label className="flex flex-col">
           Email
-          <input type="email" className="border-2 p-2" required />
+          <input type="email" className="border-2 p-2" name="email" required />
         </label>
         <label className="flex flex-col">
           Message
-          <textarea className="border-2 p-2" required></textarea>
+          <textarea className="border-2 p-2" name="message" required></textarea>
         </label>
         <button
           type="submit"
