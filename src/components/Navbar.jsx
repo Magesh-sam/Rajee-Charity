@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function Navbar() {
   const location = useLocation();
-  const isMediumScreen = useMediaQuery("(min-width: 768px)");
+  const isMediumScreen = useMediaQuery("(min-width: 850px)");
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   useEffect(() => {
     setIsNavbarOpen(false);
@@ -88,7 +88,7 @@ function Navbar() {
           <span>Rajee Subramani</span> Public Charitable Trust
         </span>
       </a>
-      <ul className="navlist flex items-center gap-3 pl-5  text-lg font-normal">
+      <ul className="navlist flex items-center gap-3 pl-5  text-lg font-normal text-nowrap">
         {isMediumScreen ? (
           <>
             <a
