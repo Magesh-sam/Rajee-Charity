@@ -8,6 +8,7 @@ function ContactForm() {
       </h2>
       <form
         className="flex flex-col gap-5 max-w-80 "
+        action="/success"
         name="contact"
         netflify
         data-netlify="true"

@@ -7,27 +7,27 @@ function Gallery() {
 
       <div className="gallery flex flex-wrap gap-5 ">
         <img
-          src="/src/assets/feature-1.jpg"
+          src="/feature-1.jpg"
           alt="featured image 1"
           width={300}
           height={200}
-          onClick={() => window.open("/src/assets/feature-1.jpg")}
+          onClick={() => window.open("/feature-1.jpg")}
           className="cursor-pointer object-contain object-top"
         />
         <img
-          src="/src/assets/feature-2.jpeg"
+          src="/feature-2.jpeg"
           alt="featured image 2"
           width={300}
           height={200}
-          onClick={() => window.open("/src/assets/feature-2.jpeg")}
+          onClick={() => window.open("/feature-2.jpeg")}
           className="cursor-pointer object-contain object-top"
         />
         <img
-          src="/src/assets/feature-3.png"
+          src="/feature-3.png"
           alt="featured image 3"
           width={300}
           height={200}
-          onClick={() => window.open("/src/assets/feature-3.png")}
+          onClick={() => window.open("/feature-3.png")}
           className="cursor-pointer object-contain object-top"
         />
       </div>
