@@ -9,7 +9,7 @@ function ContactForm() {
       <form
         className="flex flex-col gap-5 max-w-80 "
         name="contact"
-        method="post"
+        netflify
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
