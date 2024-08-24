@@ -8,7 +8,6 @@ function ContactForm() {
       </h2>
       <form
         className="flex flex-col gap-5 max-w-80 "
-        // action="https://formspree.io/f/xkgwqoaa"
         method="POST"
         name="contact"
       >
