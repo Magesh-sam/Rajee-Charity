@@ -8,9 +8,12 @@ function ContactForm() {
       </h2>
       <form
         className="flex flex-col gap-5 max-w-80 "
-        action="https://formspree.io/f/xkgwqoaa"
+        // action="https://formspree.io/f/xkgwqoaa"
         method="POST"
+        name="contact"
       >
+        <input type="hidden" name="form-name" value="contact" />
+
         <label className="flex flex-col">
           Name
           <input type="text" className="border-2 p-2" name="name" required />
